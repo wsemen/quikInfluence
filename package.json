@@ -5,12 +5,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "jest --watch",
+    "test-dev": "jest --watch",
+    "test": "jest -u",
     "coverage": "jest --coverage",
     "prettier": "npx prettier --write .",
     "check-types": "tsc --noemit",
     "eslint": "eslint",
-    "lint": "yarn eslint && yarn check-types"
+    "lint": "yarn eslint && yarn check-types",
+    "ci": "yarn install --frozen-lockfile"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.1",
